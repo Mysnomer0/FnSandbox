@@ -1,6 +1,6 @@
 Fn with DLRS and bash commands
 
-Steps to reproduce
+Try the build.sh script, or if you'd prefer to do it manualy, steps to reproduce:
 
 ```bash
 $ pwd
