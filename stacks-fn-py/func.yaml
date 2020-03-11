@@ -1,4 +1,4 @@
 schema_version: 20180708
-name: myfunc
-version: 0.0.5
+name: stacks-fn-py
+version: 0.0.3
 runtime: docker

@@ -1,4 +1,5 @@
-FROM alpine:latest
-COPY template template
-RUN tar -C template -cf init.tar .
-CMD cat init.tar
+FROM clearlinux/stacks-dlrs-oss:v0.5.0
+RUN pip install fdk
+WORKDIR workspace
+COPY func.py .
+ENTRYPOINT ["fdk", "func.py", "handler"]
