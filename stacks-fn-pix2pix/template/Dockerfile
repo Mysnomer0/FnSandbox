@@ -3,7 +3,6 @@ RUN pip install fdk
 WORKDIR workspace
 COPY func.py .
 COPY infer.py .
-COPY 0.jpg .
 COPY scripts scripts/
 COPY requirements.txt .
 COPY generator_model.h5 models/
