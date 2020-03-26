@@ -60,7 +60,7 @@ Nice, that about wraps it up! If you'd like some more all-in-one sort of command
 
 This command will post the image of your choice to the endpoint of the function you've just created and output the image as a base64 string.
 
-`curl -X POST $(fn inspect function myfn-app myfunc | jq -r ".annotations."\"fnproject.io/fn/invokeEndpoint\") --data-binary @0.jpg`
+`curl -X POST $(fn inspect function myfn-app myfunc | jq -r ".annotations."\"fnproject.io/fn/invokeEndpoint\") --data-binary @<Your image path here>`
 
 If you have JQ installed, this command will send the image of your choice to the endpoint of the function you've just created, decode the base64 output, and write it to output.jpg.
 
